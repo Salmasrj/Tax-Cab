@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="css/client-chauffeur_style.css" media="screen" type="text/css" />
+    </head>
+
+    <div class="nav">
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">S'inscrire</button>
+            <div class="dropdown-content">
+                <a href="client.html">Passager.e</a>
+                <a href="chauffeur.html">Chauffeur.e</a>
+            </div>
+        </div>
+        <div class="topnav">
+            <a href="Connect.html" >Se connecter</a>
+            <div class="logonav">
+                <img href="index.html" src="images/logo2.png">
+                <a href="index.html">Tax Cab</a>
+            </div>
+        </div>
+    </div>
+
+    <body>
+        <div class = "rows">
+            <div class="Image-fond">
+                <div class="header" id ="head">
+                    <div id="container" class = "partie1">
+                        <!-- zone de connexion --> 
+                        <form action=".php" method="POST">
+                            <h1> Inscription client</h1>
+                            <div class="row">
+                                <div class="col-25">
+                                  <label for="nom">Nom</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="text" id="nom" name="nomFamille" placeholder="Ton nom de famille..." required>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="prenom">Prénom</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="text" id="prenom" name="prenom" placeholder="Ton prénom..." required>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="Genre">Je suis</label>
+                                </div>
+                                <div class="col-75">
+                                  <select id="Genre" name="Genre">
+                                    <option value="Femme">Une femme</option>
+                                    <option value="Homme">Un homme</option>
+                                    <option value="Non binaire">Non binaire</option>
+                                  </select>
+                                </div>
+                              </div>
+
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="date">Date de naissance</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="datetime-local" id="date" name="date"required >
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="email">Votre e-mail</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="adresse">Adresse</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="adresse" name="adresse" placeholder="Ton adresse.." required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="tel">Numéro de téléphone</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="tel" name="numtel" placeholder="Ton num.." required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <br>
+                                <label for="paiement">paiement</label>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-25">
+                                <label for="rem">Remarques</label>
+                                </div>
+                                <div class="col-75">
+                                <textarea id="rem" name="Remarques" placeholder="Un commentaire à ajouter ?" style="height:200px"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <input type="submit" id='envoyer' value="S'inscrire" >
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer-dark">
+            <div class="item text">
+                <h3 class="pied">Tax Cab</h3>
+                <p>L'entreprise qui vous reunie le temps d'une course.</p>
+            </div>
+            <p class="copyright">Tax Cab &copy; 2023 Copyright El Haddaji, Chartier & Sriji</p>
+        </footer>
+
+    </body>
+</html>

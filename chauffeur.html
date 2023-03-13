@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="css/client-chauffeur_style.css" media="screen" type="text/css" />
+    </head>
+    <div class="nav">
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">S'inscrire</button>
+            <div class="dropdown-content">
+                <a href="client.html">Passager.e</a>
+                <a href="chauffeur.html">Chauffeur.e</a>
+            </div>
+        </div>
+        <div class="topnav">
+            <a href="Connect.html" >Se connecter</a>
+            <div class="logonav">
+                
+                <p href="index.html">
+                    <img href="index.html" src="images/logo2.png">
+                </p>
+            </div>
+        </div>
+    </div>
+    <body>
+        <div class = "rows">
+            <div class="Image-fond">
+                <div class="header" id ="head">
+                    <div id="container">
+                        <!-- zone de connexion -->
+                        <form action="verification.php" method="POST">
+                            <h1> Inscription chauffeurs</h1>
+
+                            <div class="row">
+                                <div class="col-25">
+                                  <label for="fname">Nom</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="text" id="fname" name="firstname" placeholder="Ton nom de famille...">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="lname">Prénom</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="text" id="lname" name="lastname" placeholder="Ton prénom...">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="Genre">Je suis</label>
+                                </div>
+                                <div class="col-75">
+                                  <select id="Genre" name="Genre">
+                                    <option value="Femme">Une femme</option>
+                                    <option value="Homme">Un homme</option>
+                                    <option value="Non binaire">Non binaire</option>
+                                  </select>
+                                </div>
+                              </div>
+
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="date">Date de naissance</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="datetime-local" id="date" name="date"required >
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="email">Votre e-mail</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Adresse</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="lname" name="lastname" placeholder="Ton adresse..">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="n°">Votre n° d'assurance</label>
+                                <input type="text" id="n°" name="n°"required>
+                            </div>
+
+                            <div>
+                                <label for="n°">Marque de voiture</label>
+                                <input type="text" id="marque" name="marque"required>
+                            </div>
+
+                            <div>
+                                <label for="n°">Plaque d'immatriculation</label>
+                                <input type="text" id="plaque" name="plaque"required>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <label for="nombre">Nombre de personne pouvant être prises en charge</label>
+                                    <div class="select">
+                                        <select name="nombre" id="nombre" required>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="autre">Autre...</option>
+                                        </select>
+
+                                    </div>
+                                </p>
+                            </div>
+
+                            <div>
+                                <label for="CV">CV</label>
+                                <input type="file" id="cv" name="cv"required>
+                            </div>
+
+                            <div class="row">
+                                <input type="submit" id='submit' value='LOGIN' >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-dark">
+            <div class="item text">
+                <h3 class="pied">Tax Cab</h3>
+                <p>L'entreprise qui vous reunie le temps d'une course.</p>
+            </div>
+            <p class="copyright">Tax Cab &copy; 2023 Copyright El Haddaji, Chartier & Sriji</p>
+        </footer>
+    </body>
+</html>
