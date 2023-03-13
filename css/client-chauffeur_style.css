@@ -37,7 +37,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 input[type=submit] {
- background-color: #53af57;
+ background-color: rgb(205, 50, 50);
  color: white;
  padding: 14px 20px;
  margin: 8px 0;
@@ -46,9 +46,9 @@ input[type=submit] {
  width: 100%;
 }
 input[type=submit]:hover {
- background-color: white;
- color: #53af57;
- border: 1px solid #53af57;
+ background-color: #ff000076;
+ color: white;
+ border: 1px solid #ff000076;
 }
 
 /*                  Barre de navigation                */
@@ -174,7 +174,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: rgb(205, 50, 50);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -184,7 +184,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #ff000076;
 }
 
 .container {
