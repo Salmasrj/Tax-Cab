@@ -49,7 +49,7 @@
                                   <label for="Genre">Je suis</label>
                                 </div>
                                 <div class="col-75">
-                                  <select id="Genre" name="Genre">
+                                  <select id="Genre" name="Genre" required>
                                     <option value="Femme">Une femme</option>
                                     <option value="Homme">Un homme</option>
                                     <option value="Non binaire">Non binaire</option>
@@ -86,44 +86,68 @@
                                 </div>
                             </div>
 
-                            <div>
-                                <label for="n°">N° d'assurance</label>
-                                <input type="text" id="n°" name="n°"required>
-                            </div>
-
-                            <div>
-                                <label for="n°">Marque de voiture</label>
-                                <input type="text" id="marque" name="marque"required>
-                            </div>
-
-                            <div>
-                                <label for="n°">Plaque d'immatriculation</label>
-                                <input type="text" id="plaque" name="plaque"required>
-                            </div>
-
-                            <div>
-                                <p>
-                                    <label for="nombre">Nombre de personne pouvant être prises en charge</label>
-                                    <div class="select">
-                                        <select name="nombre" id="nombre" required>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="autre">Autre....</option>
-                                        </select>
-
-                                    </div>
-                                </p>
-                            </div>
-
-                            <div>
-                                <label for="CV">CV</label>
-                                <input type="file" id="cv" name="cv"required>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="n°">N° d'assurance</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="nassurance" name="numero d'assurance" placeholder="Votre numéro d'assurance..." required>
+                                </div>
                             </div>
 
                             <div class="row">
-                                <input type="submit" id='submit' value='LOGIN' >
+                                <div class="col-25">
+                                    <label for="marqueV">Marque de voiture</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="marqueV" name="marque" placeholder="La marque de votre voiture..." required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="immatriculation">Plaque d'immatriculation</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="marqueV" name="marque" placeholder="La plaque d'immatriculation..." required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="nombre">Nombre de places</label>
+                                </div>
+                                <div class="col-75">
+                                    <select name="nombre" id="nombre" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="autre">Autre....</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="CV">CV</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="file" id="cv" name="cv"required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="certifassurance">Certificat d'assurance</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="file" id="certifassurance" name="certificat d'assurance" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <input type="submit" id='submit' value="S'inscrire" >
                             </div>
                         </form>
                     </div>
