@@ -162,7 +162,7 @@ section{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 23% 5%;
+  padding: 10% 5%;
 
 }
 
@@ -178,6 +178,7 @@ section{
   padding: 15px 32px;
   background-color: white;
   border-radius: 15px;
+  height: 400px;
 }
 
 .row::after {
