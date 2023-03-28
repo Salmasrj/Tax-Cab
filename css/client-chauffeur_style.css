@@ -286,3 +286,7 @@ input[type=submit]:hover {
     font-size:13px;
     margin-bottom:0;
   }
+
+  #Contact {
+    text-align: center;
+  }
