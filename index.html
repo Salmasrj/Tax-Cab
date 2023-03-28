@@ -27,7 +27,46 @@
         <div class="Image-fond">
             <div class="header" id ="head">
                 <h1>Tax Cab</h1>
-                <p>Chauffeur privé pour nos clients preférés !</p>
+                <h2>Chauffeur privé pour nos clients preférés !</h2>
+                <section id = "trajet" style="margin-top: 75px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.6943304573037!2d2.4478470519152737!3d48.787725579178876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673ef891c3f29%3A0x4e041435f7caf74b!2sIAE%20Paris-Est%20(ex.%20IAE%20Gustave%20Eiffel)%20-%20Ecole%20de%20Management!5e0!3m2!1sfr!2sfr!4v1679965444551!5m2!1sfr!2sfr" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                    <div class="row" style="text-align: center; float: right; width: 50%;">
+                        <h2 style="color:black; margin-top: 45px;">
+                            <i class="material-icons">map</i> Où allons-nous ?</h2>
+                        
+                        <div class="col-25">
+                            <label for="depart"> 
+                                <i class="material-icons">person_pin_circle</i> 
+                            </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="depart" name="adressedepart" placeholder="L'adresse de départ..." required>
+                        </div>
+
+                        <div class="col-25">
+                            <label for="arrive">
+                                <i class="material-icons">assistant_photo</i>
+                            </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="arrive" name="adressearrive" placeholder="L'adresse de destination..." required>
+                        </div>
+
+                        <div class="col-25">
+                            <label for="Genre">Type de chauffeur</label>
+                            </div>
+                            <div class="col-75">
+                            <select id="Genre" name="Genre" required>
+                                <option value="Femme">Une femme</option>
+                                <option value="Homme">Un homme</option>
+                                <option value="Non binaire">Non binaire</option>
+                            </select>
+                        </div>
+                        <a href="#" class="button" style="margin-top: 45px;"> C'est parti ! </a>
+
+                    </div>
+                </section>
             </div>
         </div>
     </div> 
@@ -38,8 +77,8 @@
                 <div class="leftcolumn">
                     <h2>Qui sommes-nous ?</h2>
                     <p>Un moyen pour les chauffeurs de contacter directement leur clientèle. <br> Professionel dynamique et innovant, une plateforme ou le Passager.e est roi et le chauffeur aussi.</p>
-                    <a href="#" class="button">Chauffeur</a>
-                    <a href="#" class="button">Passager</a>
+                    <a href="chauffeur.html" class="button">Chauffeur</a>
+                    <a href="client.html" class="button">Passager</a>
                 </div>
                 <div class="rightcolumn">
                     <img src="images/covoiturage.jpg" alt = "covoiturage" style="width: 55%;">
@@ -54,7 +93,7 @@
                 <div class="rightcolumn">
                     <h2>Passager</h2>
                     <p>Choisis facilement son chauffeur selon ses preferences pour des courses en bonne compagnie, une compagnie qui vous ressemble !</p>
-                    <a href="#" class="button"> Juste ici </a>
+                    <a href="client.html" class="button"> Juste ici </a>
                 </div>
             </section>
         </div>
@@ -63,7 +102,7 @@
                 <div class="leftcolumn">
                     <h2>Chauffeur</h2>
                     <p>Choisis facilement ta clientèle selon ses preferences pour des courses en bonne compagnie, une compagnie qui vous ressemble !</p>
-                    <a href="#" class="button">Juste ici</a>
+                    <a href="chauffeur.html" class="button">Juste ici</a>
                 </div>
                 <div class="rightcolumn">
                     <img src="images/chauffeur.jfif" alt = "conducteur" style="width: 55%;">
